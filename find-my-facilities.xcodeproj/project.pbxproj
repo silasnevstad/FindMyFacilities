@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5C6F74AC2CFA823200086FBB /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6F74AB2CFA823200086FBB /* GoogleMaps */; };
+		5C6F74AF2CFA829000086FBB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6F74AE2CFA829000086FBB /* FirebaseAnalytics */; };
+		5C6F74B12CFA829000086FBB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6F74B02CFA829000086FBB /* FirebaseFirestore */; };
+		5C6F74B32CFA82D400086FBB /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6F74B22CFA82D400086FBB /* FirebaseCore */; };
+		5C6F74B52CFA837000086FBB /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6F74B42CFA837000086FBB /* FirebaseAppCheck */; };
+		5C6F74B72CFA837000086FBB /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6F74B62CFA837000086FBB /* FirebaseAppDistribution-Beta */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5C6F746F2CFA820200086FBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +38,22 @@
 		5C6F74782CFA820200086FBB /* find-my-facilitiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "find-my-facilitiesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5C6F74B92CFA854A00086FBB /* Exceptions for "find-my-facilities" folder in "find-my-facilities" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5C6F745D2CFA81FD00086FBB /* find-my-facilities */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5C6F74602CFA81FD00086FBB /* find-my-facilities */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5C6F74B92CFA854A00086FBB /* Exceptions for "find-my-facilities" folder in "find-my-facilities" target */,
+			);
 			path = "find-my-facilities";
 			sourceTree = "<group>";
 		};
@@ -52,6 +74,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6F74AF2CFA829000086FBB /* FirebaseAnalytics in Frameworks */,
+				5C6F74AC2CFA823200086FBB /* GoogleMaps in Frameworks */,
+				5C6F74B32CFA82D400086FBB /* FirebaseCore in Frameworks */,
+				5C6F74B52CFA837000086FBB /* FirebaseAppCheck in Frameworks */,
+				5C6F74B12CFA829000086FBB /* FirebaseFirestore in Frameworks */,
+				5C6F74B72CFA837000086FBB /* FirebaseAppDistribution-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +140,12 @@
 			);
 			name = "find-my-facilities";
 			packageProductDependencies = (
+				5C6F74AB2CFA823200086FBB /* GoogleMaps */,
+				5C6F74AE2CFA829000086FBB /* FirebaseAnalytics */,
+				5C6F74B02CFA829000086FBB /* FirebaseFirestore */,
+				5C6F74B22CFA82D400086FBB /* FirebaseCore */,
+				5C6F74B42CFA837000086FBB /* FirebaseAppCheck */,
+				5C6F74B62CFA837000086FBB /* FirebaseAppDistribution-Beta */,
 			);
 			productName = "find-my-facilities";
 			productReference = 5C6F745E2CFA81FD00086FBB /* find-my-facilities.app */;
@@ -195,6 +229,10 @@
 			);
 			mainGroup = 5C6F74552CFA81FD00086FBB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5C6F74AA2CFA823200086FBB /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+				5C6F74AD2CFA829000086FBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5C6F745F2CFA81FD00086FBB /* Products */;
 			projectDirPath = "";
@@ -399,11 +437,16 @@
 				DEVELOPMENT_TEAM = 67G47TCZWY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "find-my-facilities/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location allows you to view nearby facilities.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,6 +454,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silasnevstad.find-my-facilities";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,11 +475,16 @@
 				DEVELOPMENT_TEAM = 67G47TCZWY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "find-my-facilities/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location allows you to view nearby facilities.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +492,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silasnevstad.find-my-facilities";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,6 +614,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C6F74AA2CFA823200086FBB /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+		5C6F74AD2CFA829000086FBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C6F74AB2CFA823200086FBB /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C6F74AA2CFA823200086FBB /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+		5C6F74AE2CFA829000086FBB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C6F74AD2CFA829000086FBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5C6F74B02CFA829000086FBB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C6F74AD2CFA829000086FBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5C6F74B22CFA82D400086FBB /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C6F74AD2CFA829000086FBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		5C6F74B42CFA837000086FBB /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C6F74AD2CFA829000086FBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		5C6F74B62CFA837000086FBB /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C6F74AD2CFA829000086FBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C6F74562CFA81FD00086FBB /* Project object */;
 }
